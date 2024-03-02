@@ -4,7 +4,7 @@
   align-items: center;
   .Field {
     width: 80%;
-    height: 90vh;
+    height: 1200px;
     margin: 10px;
     display: flex;
     justify-content: center;
@@ -39,7 +39,7 @@
 
       .Field_body_btn {
         margin-top: 20px;
-        width: 120px;
+        width: 100px;
         height: 40px;
         text-transform: uppercase;
         font-family: "Kode Mono", monospace;
@@ -80,4 +80,52 @@
 
 .painted {
   background-color: blue;
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1800px) {
+  .Field_body {
+    .Field_logs {
+      .Field_logs_info {
+        .Field_log_item {
+          width: 250px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1420px) and (max-width: 1600px) {
+  .Field_body {
+    .Field_logs {
+      .Field_logs_info {
+        .Field_log_item {
+          width: 200px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 1420px) {
+  .Field_body {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    .Field_logs {
+      width: 90%;
+      margin-top: 30px;
+      height: 200px;
+      .Field_logs_info {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        overflow: scroll;
+        overflow-x: scroll !important;
+        .Field_log_item {
+          width: 200px;
+        }
+      }
+    }
+  }
 }

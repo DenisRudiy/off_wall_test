@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { hoverCell } from "./services/hoverCell";
 import { colsGeneration, rowsGeneration } from "./services/tableGenerator";
-import "./styles/field.scss";
 import { clearService } from "./services/clearService";
 import { changeSize } from "./services/changeSize";
+
+import "./styles/field.scss";
 
 const Field = ({ size }: { size: number }) => {
   const [logs, setLogs] = useState<string[]>([]);

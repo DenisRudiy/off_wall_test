@@ -8,7 +8,6 @@ function App() {
   const [levels, setLevels] = useState<Levels[]>([]);
   const [size, setSize] = useState(5);
 
-  // * load data from api
   useEffect(() => {
     const getDataFromApi = async () => {
       try {
