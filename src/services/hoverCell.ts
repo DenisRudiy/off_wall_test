@@ -7,5 +7,5 @@ export function hoverCell(event: any, row: number, col: number) {
     element.classList.add("painted");
     element.style.backgroundColor = "blue";
   }
-  console.log("row", row, "col", col);
+  return `row ${row} col ${col}`;
 }
