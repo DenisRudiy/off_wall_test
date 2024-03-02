@@ -18,4 +18,4 @@ pnpm start
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-# Select difficulty level, click START and enjoy :)
+### Select difficulty level, click START and enjoy :)
